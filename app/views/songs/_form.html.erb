@@ -1,4 +1,9 @@
 <%= form_for @song  do |f| %>
+
+<!--- has a selector for artist make sure to add helper --->
+<%= artist_id_field(@song) %>
+
+
   <%= f.label :title %>
   <%= f.text_field :title %><br>
   <%= f.label :artist_name %>
